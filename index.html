@@ -124,35 +124,67 @@
 
 
     <!-- CONTACT ME -->
-    <div class="container p-5 pb-0 d-flex flex-column align-items-center">
-        <div>
-            <h2 class="m-0 fw-bold">CONTACT ME</h2>
+        <div class="container p-5 pb-0 d-flex flex-column align-items-center">
+            <div>
+                <h2 class="m-0 fw-bold">CONTACT ME</h2>
+            </div>
+            <div>
+                <hr>
+            </div>
         </div>
-        <div>
-            <hr>
+    
+        <div class="container px-5 mb-5">
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputName" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Phone Number</label>
+                    <input type="number" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 input-group">
+                    <span class="input-group-text">Message</span>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                </div>
+                <button type="submit" class="btn btn-success">Send</button>
+            </form>
         </div>
-    </div>
-
-    <form class="container px-5">
-        <div class="mb-3">
-            <label for="exampleInputName" class="form-label">Name</label>
-            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        </div>
-        <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Phone Number</label>
-            <input type="number" class="form-control" id="exampleInputPassword1">
-        </div>
-        <div class="mb-3 input-group">
-            <span class="input-group-text">Message</span>
-            <textarea class="form-control" aria-label="With textarea"></textarea>
-        </div>
-        <button type="submit" class="btn btn-success">Send</button>
-    </form>
     <!-- /CONTACT ME -->
+
+
+    <!-- FOOTER -->
+    <footer class="footer-background-first">
+        <div class="container text-center mb-5">
+            <div class="row row-cols-2 row-cols-3 py-5">
+                <div class="col">
+                    <div>
+                        <h5 class="m-0 text-light">LOCATION</h5>
+                        <span class="text-light">2215 John Daniel Drive Clark, MO 54243</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <h5 class="m-0 text-light">AROUND THE WEB</h5>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <h5 class="m-0 text-light">ABOUT FREELANCER</h5>
+                        <span class="text-light">Freelance is a free to use, open source Bootstrap theme created by <span class="text-success">Start Bootstrap</span>.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /FOOTER -->
+
+
 
   </body>
 </html>

@@ -11,6 +11,10 @@
     background-color: #1abc9c;
 }
 
+.footer-background-first {
+    background-color: #3a536b;
+}
+
 /* test */
 hr {
     border: 3px solid black;
