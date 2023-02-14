@@ -14,8 +14,8 @@
   <body>
     
     <!-- NAV-BAR -->
-    <div class="nav-background">
-        <div class="container d-flex justify-content-between align-items-center">
+    <div class="nav-background fixed-top">
+        <div class="container d-flex justify-content-between align-items-center d-none d-sm-flex py-3">
             <div>
                 <a class="text-decoration-none" href=""><h3 class="my-3 text-light fw-bold fs-4 text">START BOOTSTRAP</h3></a>
             </div>
@@ -26,13 +26,45 @@
             </div>
         </div>
     </div>
+
+    <nav class="navbar bg-body-tertiary fixed-top p-0 d-sm-none">
+        <div class="container-fluid nav-background py-3">
+          <a class="navbar-brand text-light fw-bold fs-4" href="#">START BOOTSTRAP</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon text-white fw-bold"></span>
+          </button>
+          <div class="offcanvas offcanvas-end nav-background" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">START BOOTSTRAP</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active text-white" aria-current="page" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">Contact</a>
+                  </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+    </nav>
     <!-- /NAV-BAR -->
 
 
     <!-- HEADER -->
     <div class="header-background">
         <div class="container p-5 text-center">
-            <div>
+            <div class="mt-5">
                 <img class="img-fluid" src="img/avatar.svg" alt="" style="max-width: 200px;">
             </div>
             <div>
@@ -54,7 +86,7 @@
     <!-- MAIN -->
     <div>
 
-        <div class=" pt-5 pb-0 d-flex flex-column align-items-center">
+        <div class="pt-5 pb-0 d-flex flex-column align-items-center">
             <div>
                 <h2 class="m-0 fw-bold">PORTFOLIO</h2>
             </div>
@@ -66,7 +98,7 @@
         </div>
 
         <div class="container text-center mb-5">
-            <div class="row row-cols-3 g-3">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3 g-3">
                 <div class="col debug ">
                     <div>
                         <img class="img-fluid rounded-4" src="img/cabin.png">
@@ -116,12 +148,12 @@
                 <div class="horizzontal-line rounded-2 bg-white"></div>
             </div>
 
-            <div class="d-flex mb-2 gap-3">
+            <div class="d-flex flex-column flex-sm-row mb-2 gap-3">
                 <div>
-                    <p class="ps-4 text-light">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                    <p class="ps-sm-4 text-light">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
                 </div>
                 <div>
-                    <p class="pe-4 text-light">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+                    <p class="pe-sm-4 text-light">Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
                 </div>
             </div>
 
@@ -168,7 +200,7 @@
     <!-- FOOTER -->
     <footer class="footer-background-first">
         <div class="container text-center">
-            <div class="row row-cols-2 row-cols-3 py-5">
+            <div class="row row-cols-sm-3 py-5 d-flex flex-column justify-content-center align-items-center flex-sm-row gap-5 gap-sm-0">
                 <div class="col">
                     <div>
                         <h5 class="m-0 text-light">LOCATION</h5>
@@ -178,7 +210,7 @@
                 <div class="col">
                     <div>
                         <h5 class="m-0 text-light">AROUND THE WEB</h5>
-                        <div class="d-flex justify-content-center align-items-center mt-2 gap-2 ">
+                        <div class="d-flex justify-content-center align-items-center mt-2 gap-2">
                             <a href="">
                                 <div class="p-3 border border-1 border-white rounded-circle">
                                     <i class="fa-brands fa-facebook-f text-white"></i>
@@ -223,5 +255,8 @@
     </div>
     <!-- /COPYRIGHT -->
 
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    
   </body>
 </html>
